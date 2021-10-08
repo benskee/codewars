@@ -2,7 +2,7 @@ function findOutlier(integers) {
     var e = 0
     var o = 0
     for (var x = 0; x<3; x++) {
-        if (integers[x] % 2 != 1){
+        if (Math.abs(integers[x]) % 2 != 1){
             e++
         }
         else {
